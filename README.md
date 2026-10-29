@@ -117,6 +117,17 @@ Building and running from source has its own
 [prerequisites](docs/GETTING_STARTED.md#prerequisites), including Prism
 Launcher, signed in to a Microsoft account that owns Minecraft: Java Edition.
 
+## Windows Vulkan presentation
+
+Windows child-window presentation avoids OpenGL/Vulkan native-window ownership
+conflicts. `-Drtxremix.presentation=parent` selects the original host at startup;
+`child` is this implementation's default. Changing modes requires a restart.
+Both paths keep the completed-frame copy, ray tracing and image quality.
+Mirrored wheel/key messages cannot recurse through default window procedures;
+SDL owns the cursor, key transitions and native window shortcuts. Teardown
+attempts independent releases after errors and retains callbacks while Windows
+can still invoke them.
+
 ## Crash Reports And Privacy
 
 The mod collects no data of its own. The RTX Remix runtime it carries can send

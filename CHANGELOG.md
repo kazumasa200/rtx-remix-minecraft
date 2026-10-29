@@ -11,6 +11,10 @@ also part of every mod file name.
 
 ## Unreleased
 
+### Added
+
+- Add selectable child/parent Vulkan presentation, origin-aware Win32 input forwarding and exception-safe resource cleanup.
+
 ## 0.3.0 - 2026-10-28
 
 Water caustics, skies that change from day to day, a much lighter lens, and
