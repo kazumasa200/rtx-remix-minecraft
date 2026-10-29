@@ -117,6 +117,17 @@ Building and running from source has its own
 [prerequisites](docs/GETTING_STARTED.md#prerequisites), including Prism
 Launcher, signed in to a Microsoft account that owns Minecraft: Java Edition.
 
+## Sodium compatibility
+
+Sodium 0.9.2 for Minecraft 26.3 is optional and compile-only; it is not bundled.
+Other Sodium API versions are rejected by Fabric before the adapter loads.
+The adapter captures terrain through Sodium's existing section jobs and keeps
+its discovery, cancellation, worker/upload budgets and accepted-result lifecycle.
+While Remix owns terrain, duplicate raster tessellation, sorting and draws are
+skipped. Changed/interpolated textures still reach ray-visible surfaces through
+an optional Sodium-only forwarding hook; shared animation handling is unchanged
+when Sodium is absent. ScalableLux's merged initialization guard is preserved.
+
 ## Crash Reports And Privacy
 
 The mod collects no data of its own. The RTX Remix runtime it carries can send

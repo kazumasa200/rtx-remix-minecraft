@@ -11,6 +11,10 @@ also part of every mod file name.
 
 ## Unreleased
 
+### Added
+
+- Add optional Sodium 0.9.2 terrain capture with existing build budgets, cancellation, bounded ownership and ray-visible animation forwarding. Reject unsupported API versions early.
+
 ## 0.3.0 - 2026-10-28
 
 Water caustics, skies that change from day to day, a much lighter lens, and
