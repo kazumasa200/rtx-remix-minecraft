@@ -117,6 +117,15 @@ Building and running from source has its own
 [prerequisites](docs/GETTING_STARTED.md#prerequisites), including Prism
 Launcher, signed in to a Microsoft account that owns Minecraft: Java Edition.
 
+## ImmediatelyFast compatibility
+
+ImmediatelyFast 1.17.1 for Minecraft 26.3 is optional and compile-only, never
+bundled. Other API versions are rejected before adapter application. Source font,
+map and sign capture preserves its raster batching, atlas and framebuffer
+optimizations. Cached signs share glyph preparation/emission with ordinary
+Remix text, retain distinct layouts and keep pose/light dynamic. See
+[ImmediatelyFast compatibility](docs/IMMEDIATELYFAST.md).
+
 ## Crash Reports And Privacy
 
 The mod collects no data of its own. The RTX Remix runtime it carries can send

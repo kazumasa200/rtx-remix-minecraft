@@ -11,6 +11,10 @@ also part of every mod file name.
 
 ## Unreleased
 
+### Added
+
+- Adapt ImmediatelyFast 1.17.1 font/map/sign source capture, share text preparation, retain layout-aware bounded sign caches and reject unsupported API versions early.
+
 ## 0.3.0 - 2026-10-28
 
 Water caustics, skies that change from day to day, a much lighter lens, and
